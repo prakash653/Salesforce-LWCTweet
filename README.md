@@ -1,2 +1,2 @@
-# Salesforce-LWCTweet
-Twitter Feed Using Lightning Web Component
+# Twitter Feed Using Lightning Web Component
+
