@@ -1,11 +1,11 @@
 import { LightningElement,api,wire } from 'lwc';
 import { getRecord } from 'lightning/uiRecordApi';
-const Fields=['Account.TwitterID__c']
+const Fields=['Account.TwitterID__c'] // Stores Twitter TID
 export default class TwitterHandlerComponent extends LightningElement {
     @api recordId
     twitterHandlerId ="SalesforceDevs"
     get fullTwitterUrl(){
-        return 'https://prakash1653-dev-ed--c.na124.visual.force.com/apex/TwitterFeedPage?twitterHandle=${this.twitterHandlerId}'
+        return 'https://SFOrgVFDomain/apex/TwitterFeedPage?twitterHandle=${this.twitterHandlerId}'   // Company ORG VF Domain
     }
 
     @wire(getRecord, {recordId:'recordId', fields:Fields})
