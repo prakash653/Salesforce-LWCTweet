@@ -4,4 +4,7 @@
             <iframe src={fullTwitterUrl}>  </iframe>
         </div>
     </lightning-card>
+    <template if:true={loading}>
+        <lightning-spinner variant="brand" size="large" ></lightning-spinner>
+    </template>
 </template>
